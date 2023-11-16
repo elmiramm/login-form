@@ -1,0 +1,22 @@
+.register {
+	font-size: 0.9em;
+	color: $mainTextColor;
+	text-align: center;
+
+	width: 100%;
+	font-weight: 600;
+	margin-top: 10px;
+	// &:hover {
+	// 	text-decoration: underline;
+	// }
+	// &:focus {
+	// 	color: $accentColor;
+	// }
+	// &:active {
+	// 	color: $accentColor;
+	// }
+	&:disabled {
+		color: rgba($color: $mainTextColor, $alpha: 0.3);
+		pointer-events: none;
+	}
+}

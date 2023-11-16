@@ -1,0 +1,23 @@
+.forget {
+	margin: -15px 0 15px;
+	font-size: .9em;
+	color: $mainTextColor;
+	display: flex;
+	justify-content: space-between;
+	label {
+		text-align: center;
+	}
+	label input {
+		margin-right: 3px;
+
+	}
+	label a{
+		color: $mainTextColor;
+		text-decoration: none;
+		display: inline-block;
+		margin-left: 10px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

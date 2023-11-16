@@ -1,0 +1,42 @@
+.input-box {
+	position: relative;
+	margin: 30px 0;
+	max-width: 310px;
+	border-bottom: 2px solid $mainTextColor;
+
+	svg {
+		position: absolute;
+		right: 8px;
+		width: 24px;
+		height: 24px;
+		top: 20px;
+		path {
+			fill: $mainTextColor;
+		}
+	}
+
+	label {
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		transform: translateY(-50%);
+		color: $mainTextColor;
+		font-size: 1em;
+		pointer-events: none;
+		transition: .5s;
+	}
+	input:focus ~ label,
+	input:valid ~ label {
+		top: -5px;
+	}
+	input {
+		width: 100%;
+		height: 50px;
+		background: transparent;
+		border: none;
+		outline: none;
+		font-size: 1em;
+		padding: 0 35px 0 5px;
+		color: $mainTextColor;
+	}
+}
