@@ -1,0 +1,27 @@
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6px 12px;
+	text-align: center;
+	transition: all 0.3s ease;
+	min-height: 40px;
+	min-width: 160px;
+	line-height: 1.75;
+	font-weight: 600;
+	color: #FFFFF0;
+	background-color: $accentColor;
+	border-radius: 21px;
+	&:hover {
+		color: $accentColor;
+	}
+	&:focus {
+		color: $accentColor;
+	}
+	&:active {
+		color: $accentColor;
+	}
+	&:disabled {
+		color: $accentColor;
+	}
+}
