@@ -28,7 +28,7 @@ export function form() {
 		if (form.email.value === "mail@m.com" && form.password.value === "password") {
 			alert("Вы вошли!!!");
 		} else {
-			alert("Неправильно введены email и пароль");
+			alert("Неправильно введены email и пароль!!!");
 		}
 	});
 }
