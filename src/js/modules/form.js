@@ -26,7 +26,7 @@ export function form() {
 
 	form.form.addEventListener("submit", () => {
 		if (form.email.value === "mail@m.com" && form.password.value === "password") {
-			alert("Ура, Вы вошли!!!");
+			alert("Вы вошли!!!");
 		} else {
 			alert("Неправильно ввеедны email и пароль");
 		}
