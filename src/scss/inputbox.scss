@@ -9,7 +9,8 @@
 		right: 8px;
 		width: 24px;
 		height: 24px;
-		top: 20px;
+		top: 50%;
+		transform: translateY(-50%);
 		path {
 			fill: $mainTextColor;
 		}
@@ -26,7 +27,8 @@
 		transition: .5s;
 	}
 	input:focus ~ label,
-	input:valid ~ label {
+	input:valid ~ label,
+	input.filled ~label {
 		top: -5px;
 	}
 	input {

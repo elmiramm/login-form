@@ -31,8 +31,8 @@
 						</g>
 
 					</svg>
-					<input type="email" required>
-					<label for="">Email</label>
+					<input type="email" id="email" required>
+					<label for="email">Email</label>
 				</div>
 				<div class="input-box">
 					<svg width="16px" height="16px" viewBox="-4 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000">
@@ -52,22 +52,23 @@
 						</g>
 
 					</svg>
-					<input type="password" required>
-					<label for="">Пароль</label>
+					<input type="password" required id="password">
+					<label for="password">Пароль</label>
 				</div>
 				<div class="forget">
-					<label for=""><input type="checkbox" checked>Запомнить меня
-						<a href="#">Забыли пароль?</a></label>
+					<label><input type="checkbox" checked>Запомнить меня
+					</label>
+					<a href="#">Забыли пароль?</a>
 					<!-- отключить ссылку -->
 
 				</div>
-				<button class="button" type="submit">Войти</button>
+				<button class="button" type="submit" id="button">Войти</button>
 				<button class="register" type="button" disabled>Регистрация</и>
 			</form>
 		</div>
 	</div>
-	<!-- <p class="email">email: mail@m.com</p>
-	<p class="password">пароль: password</p> -->
+	<p class="email">email: mail@m.com</p>
+	<p class="password">пароль: password</p>
 </section>
 
 	<script src="app.min.js"></script>

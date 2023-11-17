@@ -79,6 +79,7 @@ select {
 
 .login {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -123,7 +124,8 @@ select {
   right: 8px;
   width: 24px;
   height: 24px;
-  top: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .input-box svg path {
   fill: #fff;
@@ -139,7 +141,8 @@ select {
   transition: 0.5s;
 }
 .input-box input:focus ~ label,
-.input-box input:valid ~ label {
+.input-box input:valid ~ label,
+.input-box input.filled ~ label {
   top: -5px;
 }
 .input-box input {
@@ -157,8 +160,6 @@ select {
   margin: -15px 0 15px;
   font-size: 0.9em;
   color: #fff;
-  display: flex;
-  justify-content: space-between;
 }
 .forget label {
   text-align: center;
@@ -166,13 +167,13 @@ select {
 .forget label input {
   margin-right: 3px;
 }
-.forget label a {
+.forget a {
   color: #fff;
   text-decoration: none;
   display: inline-block;
   margin-left: 10px;
 }
-.forget label a:hover {
+.forget a:hover {
   text-decoration: underline;
 }
 
@@ -194,16 +195,16 @@ select {
   font-weight: 700;
 }
 .button:hover {
-  color: #FFBD59;
+  color: #0000cc;
 }
 .button:focus {
-  color: #FFBD59;
+  color: #0000cc;
 }
 .button:active {
-  color: #FFBD59;
+  color: #0000cc;
 }
 .button:disabled {
-  color: #FFBD59;
+  color: #0000cc;
 }
 
 .register {
